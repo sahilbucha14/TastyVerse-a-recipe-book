@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TastyVerse | A unique website for unique recipes</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- used for adding icons from w3 schools -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- MODAL CODE -->
+    <div id="modal">
+      <p id="dish-title-modal"></p>
+      <div id="modal-section">
+        <div id="dish-ingredients-modal">
+          <span class="heading">Ingredients : </span>
+          <ul id="ingredients-list" class="padding-3">
+
+          </ul>
+        </div>
+        <img src="" alt="" id="dish-image-modal"/>
+      </div>
+      <p id="dish-instructions-modal">
+        <span class="heading">Instructions : </span>
+        <ul id="instructions-list" class="padding-3">
+
+        </ul>
+      </p>
+      <i class="fa fa-close" id="close"></i>
+    </div>
+
+
+    <header id="head">
+      <ul id="navList">
+        <li id="logo" class="list-item">TastyVerse</li>
+        <li id="aboutUs" class="list-item">About Us</li>
+      </ul>
+
+      <div id="searchUsingFilters">
+        <input type="text" id="input" placeholder="Search here " />
+        <button id="btn-search">
+          <i class="material-icons">search</i>
+        </button>
+        <!-- to search user can either press enter or click search icon implement both ! -->
+      </div>
+
+      <div id="three-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
+
+
+    <!-- No available dishes -->
+    
+    <main id="main">
+      <h2 id="recipes-title">All Recipes</h2>
+      <p id="no-dishes">No available dishes</p>
+      <div id="recipes-container">
+
+
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+        <div class="dish-card">
+          <!-- <div class="dish-image"></div> -->
+
+          <img src="" alt="" class="dish-image" />
+
+          <!-- put click to read more -->
+          <!-- heading , ingredients , instructions , picture -->
+          <div class="text-section">
+            <p class="dish-title"></p>
+            <p class="dish-ingredients font">
+              <span class="heading">Ingredients : </span>
+            </p>
+            <p class="dish-instructions font">
+              <span class="heading">Instructions : </span>
+            </p>
+            <button class="read-more">Click to read more....</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div id="form-container">
+        <h2 id="form-heading">
+          Fill the form to make your recipe available on our website
+        </h2>
+        <form id="form-details">
+          <!-- make some other font usage like monospace it will look good ! -->
+
+          <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </p>
+
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="phone">Contact No.</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+91 99999 99999"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="title">Recipe title</label>
+            <input type="text" id="title" name="title" required />
+          </p>
+
+          <p>
+            <textarea
+              name="desc"
+              id="desc"
+              placeholder="Add Recipe description here (ingredients and instructions)"
+              required
+            ></textarea>
+          </p>
+
+          <p>
+            <label for="myfile">Upload a photo of yours dish:</label>
+            <input type="file" id="myfile" name="myfile" required multiple />
+          </p>
+
+          <p>
+            <label for="state">State</label>
+            <select id="state" name="state" required>
+              <option value="">Select state</option>
+              <option value="AN">Andaman and Nicobar Islands</option>
+              <option value="AP">Andhra Pradesh</option>
+              <option value="AR">Arunachal Pradesh</option>
+              <option value="AS">Assam</option>
+              <option value="BR">Bihar</option>
+              <option value="CH">Chandigarh</option>
+              <option value="CT">Chhattisgarh</option>
+              <option value="DN">Dadra and Nagar Haveli</option>
+              <option value="DD">Daman and Diu</option>
+              <option value="DL">Delhi</option>
+              <option value="GA">Goa</option>
+              <option value="GJ">Gujarat</option>
+              <option value="HR">Haryana</option>
+              <option value="HP">Himachal Pradesh</option>
+              <option value="JK">Jammu and Kashmir</option>
+              <option value="JH">Jharkhand</option>
+              <option value="KA">Karnataka</option>
+              <option value="KL">Kerala</option>
+              <option value="LA">Ladakh</option>
+              <option value="LD">Lakshadweep</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="MH">Maharashtra</option>
+              <option value="MN">Manipur</option>
+              <option value="ML">Meghalaya</option>
+              <option value="MZ">Mizoram</option>
+              <option value="NL">Nagaland</option>
+              <option value="OR">Odisha</option>
+              <option value="PY">Puducherry</option>
+              <option value="PB">Punjab</option>
+              <option value="RJ">Rajasthan</option>
+              <option value="SK">Sikkim</option>
+              <option value="TN">Tamil Nadu</option>
+              <option value="TG">Telangana</option>
+              <option value="TR">Tripura</option>
+              <option value="UP">Uttar Pradesh</option>
+              <option value="UT">Uttarakhand</option>
+              <option value="WB">West Bengal</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="country">Country</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              value="India"
+              readonly
+            />
+          </p>
+        </form>
+      </div>
+      <p id="last-para">
+        &copy; 2023 Made with 💖💖 by Sahil Bucha. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

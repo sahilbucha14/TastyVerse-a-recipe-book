@@ -1,0 +1,403 @@
+/* change fonts also for all */
+/* font-family: 'Nunito Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@300&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  width: 100vw;
+} */
+
+/* 
+<header id="head">
+      <ul id="navList">
+        <li>TastyVerse</li>
+        <li>About Us</li>
+      </ul>
+
+      <div id="searchUsingFilters">
+        <input type="text" />
+        <button id="btn-search">
+          <i class="material-icons">search</i>
+        </button>
+        <!-- to search user can either press enter or click search icon implement both ! -->
+      </div>
+    </header>
+ */
+
+#head {
+  /* background-color: #f5f7dc; */
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  font-family: "Nunito Sans", sans-serif;
+  /* used to make the width of header 100% even when we are reducing the width of the screen */
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+}
+
+#navList {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  font-size: 2.8rem;
+}
+
+#logo {
+  margin-left: 0.5em;
+}
+
+#aboutUs {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.list-item {
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+#searchUsingFilters {
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+}
+
+#input {
+  outline: none;
+  border: none;
+  height: 2.5em;
+  width: 18em;
+  padding-left: 1em;
+  font-size: 1.3em;
+  border-top-left-radius: 5em;
+  border-bottom-left-radius: 5em;
+}
+#btn-search {
+  border: none;
+  background-color: white;
+  height: 3.7em;
+  padding: 0.4em 1em;
+  border-left: 2px dashed black;
+  border-top-right-radius: 5em;
+  border-bottom-right-radius: 5em;
+}
+
+#three-lines {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  display: none;
+}
+.line {
+  width: 2rem;
+  background-color: rgb(95, 80, 80);
+  height: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+#main {
+  background-color: rgb(255, 255, 255);
+  margin-top: 2rem;
+  width: 100%;
+}
+
+#recipes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dish-card {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  /* border: 2px solid black; */
+  border-radius: 0.4rem;
+  background-color: rgb(252, 251, 249);
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dish-image {
+  /* border: 1px solid black; */
+  background-color: pink;
+  /* height: fit-content; */
+  width: 30%;
+}
+
+.text-section {
+  width: 70%;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.dish-title {
+  font-family: cursive;
+  font-size: 2rem;
+}
+
+.font > span {
+  display: inline-block;
+  font-family: fantasy;
+  font-size: 1.25rem;
+}
+
+.font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+}
+
+/* Footer */
+
+#footer {
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* used to make the width of header 100% even when we are reducing the width of the screen */
+  /* position: fixed; */
+}
+
+#form-container {
+  /* background-color: rgb(211, 231, 27); */
+  /* margin-top: 2em; */
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 70%; */
+}
+
+#form-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  padding: 1em;
+}
+
+#form-details {
+  font-family: monospace;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+#form-details > p {
+  margin: 1rem 0;
+}
+
+#form-details > p > label {
+  display: inline-block;
+  width: 37%;
+}
+
+#form-details > p > input {
+  border: none;
+  outline: none;
+  width: 61%;
+  height: 2.5rem;
+  border-radius: 0.4em;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+#state {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  height: 2.5rem;
+}
+
+#desc {
+  outline: none;
+  border: none;
+  border-radius: 0.4em;
+  border-top-left-radius: 0;
+  height: 10rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+#last-para {
+  margin-bottom: 6rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#modal {
+  height: 75vh;
+  width: 60vw;
+  /* border: 2px solid black; */
+  position: relative;
+  overflow: auto;
+  margin-bottom: 300px;
+  top: 4rem;
+  margin: auto;
+  /* box-shadow: ; */
+  display: none;
+}
+
+#close {
+  position: absolute;
+  right: 1rem;
+  top: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#close:hover {
+  color: grey;
+  transform: rotate(15deg);
+}
+
+#modal-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#dish-title-modal {
+  font-family: cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background-color: rgb(202, 200, 200);
+}
+
+.heading {
+  font-family: fantasy;
+  font-size: 1.6rem;
+}
+
+#ingredients-list {
+  list-style-type: circle;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#dish-image-modal {
+  height: 25rem;
+  width: 25rem;
+}
+
+#instructions-list {
+  list-style-type: decimal;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.padding-3 {
+  padding-left: 3rem;
+}
+
+#modal::-webkit-scrollbar {
+  width: 10px;
+}
+
+#modal::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+#modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#no-dishes {
+  display: none;
+}
+
+@media (min-width: 1050px) and (max-width: 1430px) {
+  .dish-card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 890px) and (max-width: 1050px) {
+  .dish-card {
+    width: 98%;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 890px) {
+  .dish-card {
+    width: 98%;
+  }
+  .dish-image {
+    width: 28%;
+  }
+
+  .text-section {
+    width: 80%;
+    padding: 0.7rem 0 0.5rem 0.5rem;
+  }
+  .dish-title {
+    font-size: 1.4rem;
+  }
+  .font > span {
+    font-size: 1rem;
+  }
+
+  .font {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 740px) {
+  .dish-card {
+    width: 55%;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: start; */
+  }
+  .dish-image {
+    width: 100%;
+    /* height: 10rem; */
+  }
+
+  .text-section {
+    width: 92%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .dish-card {
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dish-image {
+    width: 100%;
+  }
+
+  .text-section {
+    width: 92%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 828px) {
+  #searchUsingFilters {
+    display: none;
+  }
+  #aboutUs {
+    display: none;
+  }
+  #three-lines {
+    display: flex;
+  }
+}
